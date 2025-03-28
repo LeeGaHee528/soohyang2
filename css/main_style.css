@@ -1,0 +1,269 @@
+@charset 'utf-8';
+
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+em,
+img,
+small,
+strong,
+b,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+summary,
+video,
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    -webkit-text-size-adjust: none;
+    /*Chrome, Safari, newer versions of Opera*/
+
+    -moz-text-size-adjust: none;
+    /*Firefox*/
+
+    -ms-text-size-adjust: none;
+    /*Ie*/
+
+    -o-text-size-adjust: none;
+    /*old versions of Opera*/
+}
+
+body {
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
+    line-height: 24px;
+    color: #333;
+    font-size: 14px;
+}
+
+@media (max-width:1200px){
+
+
+    .footer_right{
+        display: flex;
+        justify-content: space-between;
+        font-size: clamp(11px, 1vw, 14px);
+    }
+    .footer_img{
+        padding: 6% 0 0 3% !important;
+    }
+    .inner_footer{
+        margin: 0 5%;
+        width: 90%;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+    .inner_footer h2{
+        font-size: clamp(11px, 1vw, 14px);
+    }
+    .footer_right{
+        font-size: clamp(11px, 1vw, 14px);
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:600px){
+    .gnb {
+        display: none !important;
+    }
+}
+
+#header {
+    border-bottom: 1px solid #B1C7DD;
+    height: 65px;
+}
+
+.inner_header {
+    margin: 0 5%;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 17px;
+    left: 50%;
+    margin-left: -81px;
+}
+
+.gnb {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.gnb li {
+    margin-top: 16px;
+}
+
+.gnb li a {
+    display: block;
+    margin: 0 3px;
+}
+.video video{
+    width: 100%;
+    display: block;
+}
+#container img{
+    width: 100%;
+    display: block;
+}
+.section1{
+    padding-top: 3%;
+    background: url(../images/section1_bg.jpg) no-repeat center top;
+    background-size: cover;
+}
+.inner_section1{
+    width: 70%;
+    margin: 0 auto;
+}
+.section2{
+    background: url(../images/section2_bg.jpg) no-repeat center top;
+    background-size: cover;
+}
+.section2_gift{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+.section3{
+    background: url(../images/section3_bg.jpg) no-repeat center top;
+    background-size: cover;
+}
+.inner_section3{
+    width: 70%;
+    margin: 0 auto;
+}
+.section3_coupon{
+    display: flex;
+}
+.section3_text{
+    cursor: pointer;
+}
+.section4{
+    background: url(../images/section4_bg.jpg) no-repeat center top;
+    background-size: cover;
+}
+.inner_section4{
+    width: 68.7%;
+    margin: 0 auto;
+}
+.event{
+    cursor: pointer;
+}
+.section5{
+    background-color: #86a1c2;
+    color: #fff;
+}
+.inner_section5{
+    width: 60%;
+    margin: 0 auto;
+}
+.section5 h1{
+    font-family: Cormorant Infant;
+    font-weight: 900;
+    font-size: clamp(11px, 3vw, 40px);
+    padding: 5% 0 2% 0.5%;
+}
+.notice{
+    font-weight: 300;
+    padding-bottom: 4%;
+    font-size: clamp(11px, 1vw, 16px);
+}
+.notice li{
+    padding-bottom: 1%;
+}
+#footer{
+    background-color: #B1C7DD;
+}
+.inner_footer{
+    margin: 0 5%;
+    width: 90%;
+    color: #fff;
+    display: flex;
+}
+.inner_footer h2{
+    font-size: clamp(11px, 1vw, 14px);
+    font-weight: 700;
+    padding-bottom: 10%;
+}
+.footer_img{
+    padding: 5% 0 0 3%;
+    width: 40%;
+}
+.footer_img img{
+    display: block;
+}
+.footer_right{
+    font-size: clamp(11px, 1vw, 14px);
+    white-space: nowrap;
+    font-weight: 200;
+}
+.customer{
+    width: 30%;
+    padding: 5% 3% 6%;
+}
+.customer li{
+    line-height: 110%;
+    padding: 1.5% 0 5%;
+}
+.company{
+    width: 40%;
+    padding: 5% 3% 6%;
+}
+.company h2{
+    padding-bottom: 7.5%;
+}
+.company li{
+    padding-bottom: 1.5%;
+}
+.follow{
+    width: 20%;
+    padding: 5% 3% 6%;
+}
+.follow li{
+    cursor: pointer;
+    padding-top: 5%;
+}
