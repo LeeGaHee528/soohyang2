@@ -106,11 +106,20 @@ body {
         flex-direction: column;
     }
 }
+@media (max-width:1000px){
+    .inner_section5{
+        width: 80% !important;
+        margin: 0 auto;
+    }
+}
 @media (max-width:600px){
     .gnb {
         display: none !important;
     }
-}
+    .inner_section5{
+        width: 90% !important;
+        margin: 0 auto;
+    }
 
 #header {
     border-bottom: 1px solid #B1C7DD;
@@ -151,7 +160,7 @@ body {
     display: block;
 }
 .section1{
-    padding-top: 3%;
+    padding-top: 0.2%;
     background: url(../images/section1_bg.jpg) no-repeat center top;
     background-size: cover;
 }
